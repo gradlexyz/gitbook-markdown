@@ -2,7 +2,7 @@
 
 ## 环境搭建
 
-可使用国内镜像 `https://npm.taobao.org/`
+可使用国内镜像 `https://npm.taobao.org/`<br/>
 可以使用hao123 `https://www.hao123.com`
 
 ```
