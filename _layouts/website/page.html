@@ -9,16 +9,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="shortcut icon" href="http://cdn.zitiao.org/favicon.ico" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="http://cdn.zitiao.org/favicon.ico" type="image/x-icon"> -->
     
     <link rel="stylesheet" href="{{ 'assets/website/page_custom.min.css'|resolveFile }}">
-    <script type="text/javascript" src="http://cdn.zitiao.org/www-tongji.js"></script>
-    {% if page.next and page.next.path %}
-    <link rel="next" href="{{ page.next.path|resolveFile }}" />
-    {% endif %}
-    {% if page.previous and page.previous.path %}
-    <link rel="prev" href="{{ page.previous.path|resolveFile }}" />
-    {% endif %}
+    <!-- <script type="text/javascript" src="http://cdn.zitiao.org/www-tongji.js"></script> -->
+    <!-- {% if page.next and page.next.path %} -->
+    <!-- <link rel="next" href="{{ page.next.path|resolveFile }}" /> -->
+    <!-- {% endif %} -->
+    <!-- {% if page.previous and page.previous.path %} -->
+    <!-- <link rel="prev" href="{{ page.previous.path|resolveFile }}" /> -->
+    <!-- {% endif %} -->
 {% endblock %}
 
 {% block body %}
@@ -27,17 +27,17 @@
         <div class="container">
         {% block header %}
             <!-- search_input -->
-            <div id="book-search-input" role="search">
-                <input type="text" placeholder="{{ 'SEARCH_PLACEHOLDER'|t }}" />
-            </div>
+            <!-- <div id="book-search-input" role="search"> -->
+                <!-- <input type="text" placeholder="{{ 'SEARCH_PLACEHOLDER'|t }}" /> -->
+            <!-- </div> -->
             <!-- search_input -->
 
-            {% if config.logo %}
-            <a href="{{ "/"|resolveFile }}" class="logo">
+            <!-- {% if config.logo %} -->
+            <!-- <a href="{{ "/"|resolveFile }}" class="logo"> -->
                 <!-- <img src="{{ config.logo|resolveFile }}"> -->
-                <img src="http://cdn.zitiao.org/logo.png"/>
-            </a>
-            {% endif %}
+                <!-- <img src="http://cdn.zitiao.org/logo.png"/> -->
+            <!-- </a> -->
+            <!-- {% endif %} -->
             <a href="{{ "/"|resolveFile }}" class="logo">
                 <h1>{{ config.title }}</h1>
             </a>
@@ -66,19 +66,7 @@
                                 <!-- page -->
 
                             </div>
-                            <div class="search-results">
-                                <div class="has-results">
-                                    {% block search_has_results %}
-                                    <h1 class="search-results-title">{{ 'SEARCH_RESULTS_TITLE'|t|safe }}</h1>
-                                    <ul class="search-results-list"></ul>
-                                    {% endblock %}
-                                </div>
-                                <div class="no-results">
-                                    {% block search_no_results %}
-                                    <h1 class="search-results-title">{{ 'SEARCH_NO_RESULTS_TITLE'|t|safe }}</h1>
-                                    {% endblock %}
-                                </div>
-                            </div>
+                            
                         </div>
                         <!-- search_result -->
                     </div>
@@ -90,7 +78,7 @@
     <footer class="gb-page-footer">
         <div class="container footer-container">
             <div class="copyright">
-                © 2017 <a href="http://zitiao.org">字条网 zitiao.org</a> | 京ICP备16051867号-2
+                © 2019 | huaq.xyz
             </div>
         </div>
     </footer>

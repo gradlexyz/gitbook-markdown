@@ -3,6 +3,7 @@
 ## 环境搭建
 
 可使用国内镜像 `https://npm.taobao.org/`
+可以使用hao123 `https://www.hao123.com`
 
 ```
 # 安装全局 gitbook，root 用户执行
@@ -20,4 +21,5 @@ git pull
 gitbook build
 rm -rf _book_cache
 cp -r _book _book_cache
+find . -maxdepth 1 -mindepth 1 -exec rm -rf {} \;
 ```
